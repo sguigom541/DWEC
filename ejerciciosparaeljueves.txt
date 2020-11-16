@@ -1,0 +1,5 @@
+1.Funcion que pasandole tu edad te devuelva si eres mayor de edad.
+2.Funcion que pasandole un dia de la semana te diga cuanto te queda para volver a trabajar
+3.Funcion que pasandole un dni de 8 cifras diga si es correcto o no.
+4.Funcion que pasandole un número en caja de texto imprime esa tabla de multiplicar.
+5.Función que pasandole una letra te diga cuantas hay en el texto.

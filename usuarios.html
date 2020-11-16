@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="usuarios.js"></script>
+</head>
+<body>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td><label for="dni">dni</label></td>
+                <td><label for="nombre">nombre</label></td>
+                <td><label for="fechaNac">Fecha Nacimiento</label></td>
+                <td><label for="operacion">Operación</label></td>
+            </tr>
+        </thead>
+        <tbody id="usuarios"></tbody>
+        <tfoot id="footer">
+            <tr>
+                <tr>
+                    <td><input type="text" name="dni" id="dni"></td>
+                    <td><input type="text" name="nombre" id="nombre"></td>
+                    <td><input type="text" name="fechaNac" id="fechaNac"></td>
+                    <td><button onclick="guardarUsuario();Empresa.almacenar()">Guardar</button></td>
+                </tr>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

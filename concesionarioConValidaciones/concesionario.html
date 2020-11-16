@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concesionario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="concesionario.js"></script>
+</head>
+
+<body>
+    <ul class="menu">
+        <li><button id="propietario">Propietario</button></li>
+        <li><button id="vehiculo">Vehiculo</button></li>
+        <li><button id="garantia">Garantia</button></li>
+
+    </ul>
+
+    <form >
+        <div id="contenedor-propietario">
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni"><br>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre"><br>
+            <label for="fechaNac">F.Nacimiento</label>
+            <input type="text" name="fechaNac" id="fechaNac">
+        </div>
+        <div id="contenedor-vehiculo">
+            <label for="marca">Marca</label>
+            <input type="text" name="marca" id="marca"><br>
+            <label for="modelo">Modelo</label>
+            <input type="text" name="modelo" id="modelo">
+            <label for="anioFab">Año Fabr</label>
+            <input type="text" name="anioFab" id="anioFab">
+        </div>
+        <div id="contenedor-garantia">
+            <label for="tipoSeguro">Tipo Seguro</label><br>
+
+            <input type="radio" name="seguro" id="todoRiesgoSinFranquicia"/>
+            <label for="todoRiesgoSinFranquicia"> Todo Riesgo sin Franquicia</label><br>
+
+            <input type="radio" name="seguro" id="todoRiesgoConFranquicia"/>
+            <label for="todoRiesgoConFranquicia"> Todo Riesgo con Franquicia</label><br>
+            <input type="text" name="tipoTodoRiesgoConFranquicia" id="tipoTodoRiesgoConFranquicia" disabled><br>
+
+            <input type="radio" name="seguro" id="aTerceros"/>
+            <label for="aTerceros"> A terceros</label>
+
+            <input type="checkbox" name="luna" id="luna" disabled><label for="luna">Lunas</label>
+            <input type="checkbox" name="asisCarretera" id="asisCarretera" disabled><label for="asisCarretera">Asistencia Carretera</label>
+            <input type="checkbox" name="recursoMultas" id="recursoMultas" disabled><label for="recursoMultas">Recurso de Multas</label><br>
+            <input type="submit" name="enviar" id="enviar"/>
+
+        </div>
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de letras</title>
+    <script src="script.js"> </script>
+    <script>
+
+        function cuenta()
+        {
+            var caracter=document.getElementById("letra").value;
+            var texto=document.getElementById("texto").value;
+            var apariciones=cuentatexto(caracter,texto);
+            document.getElementById("resp").innerHTML=
+                cuentatexto(caracter,texto) + "apariciones";   
+            document.getElementById("resp").style.color=
+                (apariciones<10)?"red":"green";
+            document.getElementById("resp").style.fontSize=
+                (apariciones<10)?"24px":"10px";
+        }
+    </script>
+</head>
+<body>
+    <h1>Contador de letras</h1>
+
+    <p>
+        introduce la letra a contar <input type="text" name="" id="letra" maxlength="1"/>
+        <input type="button" value="Contar" onclick="cuenta()">
+        <span id="resp"></span>
+        <textarea name="" id="texto" cols="60" rows="10"></textarea>
+    </p>
+</body>
+</html>

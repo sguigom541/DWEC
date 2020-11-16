@@ -1,0 +1,29 @@
+table{
+    border: 1px solid;
+    width: 700px;
+    position:relative;
+    
+}
+table tr{
+    border:1px solid;
+}
+
+table thead{
+    color:#fff;
+    background-color:blue;
+}
+table td{
+    background-color:red;
+    color:#fff;
+    border:1px solid;
+}
+table th{
+    border:1px solid;
+    text-align: center;
+}
+
+span{
+    display:inline-block;
+    width:150px;
+    
+}

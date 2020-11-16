@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <a id="salude">Pulsa para que te salude</a>
+    
+    <p>
+        Contar desde <input type="number" id="inicio"/> hasta <input type="number" id="fin"/>
+        <button onclick="contar()">Contar</button>
+    </p>
+
+    <p id="resultado"></p>
+
+    <p>
+        Insertar alumno <input type="text"  id="nombre"> <button onclick="grabar()">Grabar</button>
+    </p>
+    <p>
+        <button onclick="imprimir(nombresSinOrdenar)">Orden llegada</button>
+        <button onclick="imprimir(nombresOrdenados.sort())">Orden Creciente</button>
+        <button onclick="imprimir(nombresOrdenados.sort().reverse())">Orden Decreciente</button>
+    </p>
+
+    <p id="listado"></p>
+    
+</body>
+</html>
