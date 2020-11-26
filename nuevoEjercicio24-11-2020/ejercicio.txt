@@ -1,0 +1,13 @@
+coger la pagina de manolo y hacer un guardar como;
+
+
+hacer un control de trabajadores
+los trabajadores llegan y fichan, meten su dni y la hora(no se puede tocar input read only o disabled);
+
+boton fichar
+
+cuando el trabajador ficha, en trabajadores me saldrá el dni la hora de entrada, tiempo de trabajo en tiempo real, boton descanso. se para el tiempo, cuando pincho reanudar se reanuda el tiempo.
+
+al final un control de salida dni y boton salida.
+
+en el margen izquierdo aparece un informe de los trabajadores.
