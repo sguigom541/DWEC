@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabajadores</title>
+    <script src="trabajadores.js"></script>
+    <style>
+        #izq {
+            width: 20%;
+            float: left;
+
+
+
+        }
+
+        #centro {
+            width: 70%;
+            float: left;
+
+        }
+
+        #trabajando {
+            width: 70%;
+        }
+
+        table {
+            display: table;
+            border-collapse: separate;
+            box-sizing: border-box;
+            text-indent: initial;
+            border-spacing: 2px;
+            border-color: grey;
+        }
+
+        thead {
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+        }
+
+        tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+        }
+
+        .egt th {
+            padding: .2em .8em;
+            border: 1px solid rgba(20, 50, 90, .25);
+            background: rgba(0, 102, 255, .25);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="izq">
+        <h2>Listado de trabajadores</h2>
+    </div>
+    <div id="centro">
+        <section>
+            <fieldset id="fieldset">
+                <legend>Introduzca su dni:</legend>
+                <label for="dni">DNI</label>
+                <input type="text" name="dni" id="dni" />
+                <input type="button" value="Iniciar" id="iniciar" />
+                <label for="reloj">Tiempo transcurrido</label>
+                <span id="hora"></span>
+
+            </fieldset>
+        </section>
+        <br />
+        <div id="trabajando">
+            <table class="egt">
+                <thead>
+                    <th>dni</th>
+                    <th>fecha de comienzo</th>
+                    <th>tiempo de trabajo</th>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
