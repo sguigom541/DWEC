@@ -5,16 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trabajadores</title>
-    <script src="trabajadores.js"></script>
+    <script src="script.js"></script>
     <style>
-        #izq {
-            width: 20%;
-            float: left;
-
-
-
-        }
-
         #centro {
             width: 70%;
             float: left;
@@ -25,6 +17,9 @@
             width: 70%;
         }
 
+        #sintrabajar{
+            width:70%;
+        }
         table {
             display: table;
             border-collapse: separate;
@@ -46,41 +41,61 @@
             border-color: inherit;
         }
 
-        #egt th {
+        #activos th {
             padding: .2em .8em;
             border: 1px solid rgba(20, 50, 90, .25);
             background: rgba(0, 102, 255, .25);
             text-align: center;
         }
+        #tablaTerminados th{
+            padding: .2em .8em;
+            border: 1px solid rgba(20, 50, 90, .25);
+            background: rgba(0, 102, 255, .25);
+            text-align: center;
+        }
+        
     </style>
 </head>
 
 <body>
-    <div id="izq">
-        <h2>Listado de trabajadores</h2>
-    </div>
+    
     <div id="centro">
         <section>
             <fieldset id="fieldset">
                 <legend>Introduzca su dni:</legend>
                 <label for="dni">DNI</label>
                 <input type="text" name="dni" id="dni" />
-                <input type="button" value="Iniciar" id="iniciar" />
-                <label for="reloj">Tiempo transcurrido</label>
-                <span id="hora"></span>
+                <input type="button" value="fichar" id="fichar" />
 
             </fieldset>
         </section>
         <br />
+        <h2>Trabajando</h2>
         <div id="trabajando">
-            <table id="egt">
+            <table id="activos">
                 <thead>
                     <th>dni</th>
-                    <th>fecha de comienzo</th>
-                    <th>tiempo de trabajo</th>
+                    <th>Hora comienzo</th>
+                    <th>Tiempo trabajando</th>
+                    <th>Pausar/Parar</th>
 
                 </thead>
-                <tbody id="tbody">
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <h2>Sin trabajar</h2>
+        <div id="sinTrabajar">
+            <table id="tablaTerminados">
+                <thead>
+                    <th>dni</th>
+                    <th>Hora Comienzo</th>
+                    <th>Tiempo trabajado</th>
+                    <th>Hora fin</th>
+                </thead>
+                <tbody>
 
                 </tbody>
             </table>
