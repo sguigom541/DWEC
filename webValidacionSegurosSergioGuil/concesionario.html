@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>concesionario</title>
+    <script src="concesionario.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="div1" class="concesionario">
+        <label for="dni">DNI</label>
+        <input type="text" name="dni" id="dni"><br>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="fechaNac">F.Nacimiento</label>
+        <input type="text" name="fechaNac" id="fechaNac">
+    </div>
+
+    <div id ="div2" class="concesionario">
+        <label for="matricula">Matricula</label>
+        <input type="text" name="matricula" id="matricula"><br/>
+        <label for="marca">Marca</label>
+        <input type="text" name="marca" id="marca"><br />
+        <label for="modelo">Modelo</label>
+        <input type="text" name="modelo" id="modelo"><br>
+        <label for="anioFab">Año Fabr</label>
+        <input type="text" name="anioFab" id="anioFab">
+    </div>
+
+    <div id="div3" class="concesionario">
+        <label for="tipoSeguro">Tipo Seguro</label><br />
+        <label for="todoRiesgoSinFranquicia">Todo Riesgo Sin Franquicia</label><input type="radio" name="seguro"
+            id="todoRiesgoSinFranquicia" /><br />
+
+        <label for="todoRiesgoConFranquicia">Todo Riesgo Con Franquicia</label><input type="radio" name="seguro"
+            id="todoRiesgoConFranquicia"><br>
+        <div class="tipoTodoRiesgoConFranquicia oculto">
+            <input type="text" name="tipo" id="textTodoRiesgoConFranquicia" /><br />
+        </div>
+
+        <label for="aTercero">A terceros </label>
+        <input type="radio" name="seguro" id="aTerceros"><br />
+        <div class="aTerceros oculto">
+            <input type="checkbox" name="luna" id="luna"><label for="luna">Luna</label>
+            <input type="checkbox" name="asistencia" id="asistencia"><label for="asistencia">Asistencia en
+                carretera</label>
+            <input type="checkbox" name="multas" id="multas"><label for="multas">Multas</label>
+        </div>
+
+    </div>
+
+    <button id="anterior">Anterior</button>&nbsp;&nbsp;&nbsp;&nbsp;<button
+        id="siguiente">Siguiente</button>
+
+</body>
+
+</html>

@@ -53,5 +53,15 @@ window.addEventListener("load", function () {
 
     btnDesmatricularTodos.addEventListener("click", function () {
 
+        var origen=document.getElementById("matriculados");
+        var destino=document.getElementById("alumnos");
+        var salida = true;
+        while (salida) {
+            if (origen.options[0] == null) {
+                salida = false;
+            } else {
+                destino.appendChild(origen.options.item(0));
+            }
+        }
     })
 })

@@ -10,14 +10,9 @@
 </head>
 
 <body>
-    <ul class="menu">
-        <li><button id="propietario">Propietario</button></li>
-        <li><button id="vehiculo">Vehiculo</button></li>
-        <li><button id="garantia">Garantia</button></li>
 
-    </ul>
 
-    <form >
+    <form>
         <div id="contenedor-propietario">
             <label for="dni">DNI</label>
             <input type="text" name="dni" id="dni"><br>
@@ -37,24 +32,26 @@
         <div id="contenedor-garantia">
             <label for="tipoSeguro">Tipo Seguro</label><br>
 
-            <input type="radio" name="seguro" id="todoRiesgoSinFranquicia"/>
+            <input type="radio" name="seguro" id="todoRiesgoSinFranquicia" />
             <label for="todoRiesgoSinFranquicia"> Todo Riesgo sin Franquicia</label><br>
 
-            <input type="radio" name="seguro" id="todoRiesgoConFranquicia"/>
+            <input type="radio" name="seguro" id="todoRiesgoConFranquicia" />
             <label for="todoRiesgoConFranquicia"> Todo Riesgo con Franquicia</label><br>
             <input type="text" name="tipoTodoRiesgoConFranquicia" id="tipoTodoRiesgoConFranquicia" disabled><br>
 
-            <input type="radio" name="seguro" id="aTerceros"/>
+            <input type="radio" name="seguro" id="aTerceros" />
             <label for="aTerceros"> A terceros</label>
 
             <input type="checkbox" name="luna" id="luna" disabled><label for="luna">Lunas</label>
-            <input type="checkbox" name="asisCarretera" id="asisCarretera" disabled><label for="asisCarretera">Asistencia Carretera</label>
-            <input type="checkbox" name="recursoMultas" id="recursoMultas" disabled><label for="recursoMultas">Recurso de Multas</label><br>
-            <input type="submit" name="enviar" id="enviar"/>
+            <input type="checkbox" name="asisCarretera" id="asisCarretera" disabled><label
+                for="asisCarretera">Asistencia Carretera</label>
+            <input type="checkbox" name="recursoMultas" id="recursoMultas" disabled><label for="recursoMultas">Recurso
+                de Multas</label><br>
+            <input type="submit" name="enviar" id="enviar" />
 
         </div>
     </form>
-    
+
 </body>
 
 </html>

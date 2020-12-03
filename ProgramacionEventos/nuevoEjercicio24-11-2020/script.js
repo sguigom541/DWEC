@@ -78,6 +78,7 @@ Empresa.movTrabajadores = function () {
         celda.innerHTML = trabajador.tiempoTrabajado();
         trabajador.temporizador = trabajador.tiempoTrabajado();
 
+        //creamos los botones
         var botPausar = document.createElement("button");
         botPausar.type = "button";
         botPausar.id = "pausar";
@@ -133,8 +134,14 @@ function btnClickParar() {
     }
     Empresa.finJornada.push(trabajador);
 }
-function btnClickPausar() {
 
+function btnClickPausar() {
+    debugger;
+    var trabajador = this.parentElement.parentElement.trabajador;
+    
+    console.log(trabajador);
+    trabajador.temporizador=trabajador.tiempoTrabajado();
+    
 }
 
 
