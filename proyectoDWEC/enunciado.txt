@@ -1,0 +1,26 @@
+proyecto de Control Laboral
+
+1. ventana para el mantenimiento de los trabajadores. 
+    1.1.Acciones
+        a)crear trabajadores(dni,nombre,horasContratado a la semana(muy importante))
+        b)editar trabajadores
+        c)eliminar trabajadores(debe avisar si tiene horas trabajadas de que se perderán)
+        d)generar informe mensual de horas trabajadas(los dias trabajados y el mes)
+        e)generar listado de trabajadores.
+2.ventana para el mantenimiento de la empresa
+    2.1.Acciones
+        a)editar datos de la empresa tales como horario laboral,nombre,etc.
+        b)Máximo número de trabajadores simultáneas
+3.Acceso a la empresa 
+    3.1.Acciones
+        a)Entrar en la empresa y automáticamente empezamos a trabajar.
+        b)Descansar el trabajador está descansando, este tiempo no se computa como trabajado, 
+        pero se debe controlar.
+        c)Terminar la jornada.
+        d)Dia y hora actuales.
+4.Control de disponibilidad de puesto de trabajo.
+    4.1.Acciones  
+        a)Un trabajador pueda saber si hay puestos libres.
+        b)Un trabajador pueda reservar puesto de trabajado durante un periodo.
+5.
+        
