@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script/empresa.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <header class="header">
+            <h2></h2>
+        </header>
+        <main class="contenido">
+            <div class="mantenimiento">
+                <h2>Trabajadores</h2>
+                <input type="button" class="btn_new" value="Añadir Trabajador">
+                <hr>
+                <br>
+                <table class="blueTable" id="trabajadores">
+                    <thead>
+                        <tr>
+                            <th>DNI</th>
+                            <th>NOMBRE</th>
+                            <th>HORAS CONTRATADAS</th>
+                            <th>ACCIONES</th>
+                        </tr>
+                    </thead>
+                    <!--Los trabajadores-->
+                    <tbody>
+                        <tr>
+                            <td>cell1_1</td>
+                            <td>cell2_1</td>
+                            <td>cell3_1</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <!--<input type="button" value="Editar" class="modtrabajador" id="modEmpleado"><input
+                                    type="button" value="Borrar" class="borrartrabajador" id="borrarEmpleado">-->
+                    <tfoot>
+                        <tr>
+                            <td><input type="text" id="dniMod"></td>
+                            <td><input type="text" id="nombreMod"></td>
+                            <td><input type="text" id="horasContratadasMod"></td>
+                            <td><input type="button" class="actualizarTrab" value="actualizar" id="editando"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="adminEmpresa">
+                <form id="formularioEmpresa">
+                    <fieldset>
+                        <legend>Nueva Empresa</legend>
+                        <label for="nombreEmpresa">Nombre</label><br>
+                        <input type="text" name="nombreEmpresa" id="nombreEmpresa">
+                        <label for="horaInicio">Hora Inicio</label>
+                        <input type="text" name="horaInicio" id="horaInicio">
+                        <label for="horaFin">Hora Fin</label>
+                        <input type="text" name="horaFin" id="horaFin">
+                        <label for="numTrSim">Nº Trabajadores Simultáneos</label>
+                        <input type="text" name="numTrSim" id="numTrSim">
+                        <input type="button" value="Crear Empresa" id="crearEmpresa">
+                    </fieldset>
+
+
+
+                </form>
+            </div>
+
+
+        </main>
+        <aside class="sidebar">
+            <ul>
+                <li>
+                    <input type="button" value="Admin Empresa">
+                </li>
+                <li>
+                    <input type="button" value="Admin Usuarios">
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </aside>
+        <footer class="footer">
+            <h3>TODOS LOS DERECHOS RESERVADOS</h3>
+        </footer>
+    </div>
+
+    <div class="formularioTrabajador" style="display: none;">
+
+        <form id="newTrabajador">
+
+            <fieldset>
+                <legend>Datos del trabajador</legend>
+                <label for="dni">DNI</label>
+                <input type="text" id="dni">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+                <label for="horasContratadas">Horas Semanales Contratadas</label>
+                <input type="text" name="horasContratadas" id="horasContratadas">
+            </fieldset>
+            <input type="button" value="crear" id="crearTrabajador">
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>
