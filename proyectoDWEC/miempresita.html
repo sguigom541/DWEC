@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./script/empresa.js"></script>
+    <script src="./script/main.js"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -14,11 +14,33 @@
     <div class="contenedor">
         <header class="header">
             <h2></h2>
+            <div class="diaSemana">
+                <input type="date" name="diaSemana" id="diaSemana">
+            </div>
+
         </header>
         <main class="contenido">
-            <div class="mantenimiento">
+            <div id="adminEmpresa">
+                <h2>Nueva Empresa</h2>
+                <hr>
+                <form id="formularioEmpresa">
+                    <fieldset>
+                        <legend>Nueva Empresa</legend>
+                        <label for="nombreEmpresa">Nombre</label>
+                        <input type="text" name="nombreEmpresa" id="nombreEmpresa"><br>
+                        <label for="horaInicio">Hora Inicio</label>
+                        <input type="text" name="horaInicio" id="horaInicio"><br>
+                        <label for="horaFin">Hora Fin</label>
+                        <input type="text" name="horaFin" id="horaFin"><br>
+                        <label for="numTrSim">Nº Trabajadores Simultáneos</label>
+                        <input type="text" name="numTrSim" id="numTrSim"><br>
+                        <input type="submit" value="Crear Empresa" id="crearEmpresa">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="mantenimiento oculto">
                 <h2>Trabajadores</h2>
-                <input type="button" class="btn_new" value="Añadir Trabajador">
+                <input type="button" class="btn_new" value="Añadir Trabajador" id="modal-newUser">
                 <hr>
                 <br>
                 <table class="blueTable" id="trabajadores">
@@ -51,39 +73,29 @@
                     </tfoot>
                 </table>
             </div>
-
-            <div class="adminEmpresa">
-                <form id="formularioEmpresa">
-                    <fieldset>
-                        <legend>Nueva Empresa</legend>
-                        <label for="nombreEmpresa">Nombre</label><br>
-                        <input type="text" name="nombreEmpresa" id="nombreEmpresa">
-                        <label for="horaInicio">Hora Inicio</label>
-                        <input type="text" name="horaInicio" id="horaInicio">
-                        <label for="horaFin">Hora Fin</label>
-                        <input type="text" name="horaFin" id="horaFin">
-                        <label for="numTrSim">Nº Trabajadores Simultáneos</label>
-                        <input type="text" name="numTrSim" id="numTrSim">
-                        <input type="button" value="Crear Empresa" id="crearEmpresa">
-                    </fieldset>
-
-
-
+            <div class="login-form">
+                <h3>LOGIN</h3>
+                <hr>
+                <form id="login">
+                    <label for="dniLogin">DNI</label>
+                    <input type="text" id=""><br>
+                    <input type="button" value="Acceder" id="acceso">
                 </form>
             </div>
-
-
         </main>
         <aside class="sidebar">
             <ul>
                 <li>
-                    <input type="button" value="Admin Empresa">
+                    <input type="button" value="Admin Empresa" id="divEmpresa">
                 </li>
                 <li>
-                    <input type="button" value="Admin Usuarios">
+                    <input type="button" value="Admin Usuarios" id="divUsuarios">
                 </li>
                 <li>
-
+                    <input type="button" value="Login" id="divLogin">
+                </li>
+                <li>
+                    <input type="button" value="Salida" id="divSalida">
                 </li>
             </ul>
         </aside>
@@ -92,25 +104,28 @@
         </footer>
     </div>
 
-    <div class="formularioTrabajador" style="display: none;">
-
-        <form id="newTrabajador">
-
-            <fieldset>
-                <legend>Datos del trabajador</legend>
-                <label for="dni">DNI</label>
-                <input type="text" id="dni">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
-                <label for="horasContratadas">Horas Semanales Contratadas</label>
-                <input type="text" name="horasContratadas" id="horasContratadas">
-            </fieldset>
-            <input type="button" value="crear" id="crearTrabajador">
 
 
-        </form>
 
+    <!--Ventana modal crear trabajador-->
+    <div id="div-nuevoTrabajador" class="modalContainer">
+        <div class="modal-content">
+            <button id="btnCerrarNewTrabajador">Cerrar</button>
+            <form id="newTrabajador">
+                <fieldset>
+                    <legend>Nuevo Trabajador</legend>
+                    <label for="dni">DNI</label>
+                    <input type="text" id="dni"><br>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre"><br>
+                    <label for="horasContratadas">Horas Semanales Contratadas</label>
+                    <input type="text" name="horasContratadas" id="horasContratadas">
+                </fieldset>
+                <input type="button" value="crear" id="crearTrabajador">
+            </form>
+        </div>
     </div>
+
 </body>
 
 </html>

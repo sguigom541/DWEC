@@ -1,9 +1,9 @@
 /** leemo*/
 /**La clase Empresa */
 
-function empresa(nombre,horaInicio,horaFin,numTrSimultaneos){
+function empresa(nombre,numTrSimultaneos){
     this.nombre=nombre;
-    this.horarioEmpresa=[horaInicio,horaFin];
+    this.horario=[];
     this.trabajadores=[];
     this.trabajadoresSimultaneos=numTrSimultaneos;
 
