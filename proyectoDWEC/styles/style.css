@@ -23,10 +23,10 @@ a{
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, auto);
 
-	grid-template-areas: "header header header"
-						 "contenido contenido sidebar"
-						 "contenido contenido sidebar"
-						 "footer footer footer";
+	grid-template-areas: "header header header header"
+						 "contenido contenido contenido sidebar"
+						 "contenido contenido contenido sidebar"
+						 "footer footer footer footer";
 }
 
 .oculto{

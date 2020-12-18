@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./script/main.js"></script>
+    <script src="./script/empresa.js"></script>
+    <script src="./script/libreria.js"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -20,10 +22,10 @@
 
         </header>
         <main class="contenido">
-            <div id="adminEmpresa">
+            <div id="divEmpresa" style="display: block;">
                 <h2>Nueva Empresa</h2>
                 <hr>
-                <form id="formularioEmpresa">
+                <form id="formularioEmpresa" >
                     <fieldset>
                         <legend>Nueva Empresa</legend>
                         <label for="nombreEmpresa">Nombre</label>
@@ -34,11 +36,11 @@
                         <input type="text" name="horaFin" id="horaFin"><br>
                         <label for="numTrSim">Nº Trabajadores Simultáneos</label>
                         <input type="text" name="numTrSim" id="numTrSim"><br>
-                        <input type="submit" value="Crear Empresa" id="crearEmpresa">
+                        <input type="button" value="Crear Empresa" id="crearEmpresa">
                     </fieldset>
                 </form>
             </div>
-            <div class="mantenimiento oculto">
+            <div id="divTrabajadores" style="display: none;">
                 <h2>Trabajadores</h2>
                 <input type="button" class="btn_new" value="Añadir Trabajador" id="modal-newUser">
                 <hr>
@@ -49,16 +51,14 @@
                             <th>DNI</th>
                             <th>NOMBRE</th>
                             <th>HORAS CONTRATADAS</th>
-                            <th>ACCIONES</th>
+                            <th>EDITAR</th>
+                            <th>BORRAR</th>
                         </tr>
                     </thead>
                     <!--Los trabajadores-->
                     <tbody>
                         <tr>
-                            <td>cell1_1</td>
-                            <td>cell2_1</td>
-                            <td>cell3_1</td>
-                            <td></td>
+                            
                         </tr>
                     </tbody>
                     <!--<input type="button" value="Editar" class="modtrabajador" id="modEmpleado"><input
@@ -73,7 +73,13 @@
                     </tfoot>
                 </table>
             </div>
-            <div class="login-form">
+            <div id="divPuestosDisponibles" style="display: none;">
+
+            </div>
+            <div id="divEstadisticas">
+
+            </div>
+            <div id="divFichar" style="display: none;">
                 <h3>LOGIN</h3>
                 <hr>
                 <form id="login">
@@ -83,19 +89,22 @@
                 </form>
             </div>
         </main>
-        <aside class="sidebar">
+        <aside  id="menuTrabajadores" class="sidebar">
             <ul>
                 <li>
-                    <input type="button" value="Admin Empresa" id="divEmpresa">
+                    <input type="button" value="Empresa" id="menuEmpresa">
                 </li>
                 <li>
-                    <input type="button" value="Admin Usuarios" id="divUsuarios">
+                    <input type="button" value="Trabajadores" id="menuUsuarios">
                 </li>
                 <li>
-                    <input type="button" value="Login" id="divLogin">
+                    <input type="button" value="Puestos Disponibles" id="menuPuestosDisponibles">
                 </li>
                 <li>
-                    <input type="button" value="Salida" id="divSalida">
+                    <input type="button" value="Estadisticas" id="menuEstadisticasEmpresa">
+                </li>
+                <li>
+                    <input type="button" value="Fichar" id="menuFichar">
                 </li>
             </ul>
         </aside>
