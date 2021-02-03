@@ -3,7 +3,7 @@ $(document).ready(function () {
         console.log($(this).val());
         $.get("https://restcountries.eu/rest/v2/name/" + $(this).val(),
            function(data){
-              
+
                 var miSelect=$("#respuesta");
                 var options=$("#respuesta option");
                 
